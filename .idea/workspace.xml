@@ -4,17 +4,68 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="304c0466-487b-4d30-a72c-83501ccbd974" name="Changes" comment="" />
+    <list default="true" id="304c0466-487b-4d30-a72c-83501ccbd974" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonalImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/ClientEvaluation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/EvaluationRecordImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/SocialPerformanceEvaluation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/CockpitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/SalesMenOverviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/SceneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/utils/DataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/utils/DatabaseConnectionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/cockpit.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/baustelle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/salesMenOverview.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/hbrs/performancecockpit/controler/ManagePersonalImplRoundTripTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/FormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/entities/SalesMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/entities/SalesMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/EvaluationRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/EvaluationRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hbrs/performancecockpit/form.fxml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2WtwEyEJP8YUV0SDfrYGgQxKCYD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,9 +73,66 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/oligo/IdeaProjects/PerformanceCockpit/src/main/resources/images"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oligo\IdeaProjects\PerformanceCockpit\src\main\resources\images" />
+      <recent name="C:\Users\oligo\IdeaProjects\PerformanceCockpit\src\main\resources\com\hbrs\performancecockpit" />
+      <recent name="C:\Users\oligo\IdeaProjects\PerformanceCockpit\src\main\java\com\hbrs\performancecockpit\controler" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oligo\IdeaProjects\PerformanceCockpit\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.hbrs.performancecockpit.controler" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.hbrs.performancecockpit.Application" />
+      <module name="PerformanceCockpit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hbrs.performancecockpit.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagePersonalImplRoundTripTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PerformanceCockpit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hbrs.performancecockpit.controler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hbrs.performancecockpit.controler" />
+      <option name="MAIN_CLASS_NAME" value="com.hbrs.performancecockpit.controler.ManagePersonalImplRoundTripTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ManagePersonalImplRoundTripTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

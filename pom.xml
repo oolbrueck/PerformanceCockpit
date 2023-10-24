@@ -38,6 +38,16 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>3.12.14</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>3.12.14</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -60,7 +70,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.hbrs.performancecockpit/com.hbrs.performancecockpit.HelloApplication
+                            <mainClass>com.hbrs.performancecockpit/com.hbrs.performancecockpit.Application
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
