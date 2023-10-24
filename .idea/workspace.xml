@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="304c0466-487b-4d30-a72c-83501ccbd974" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonalImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/ClientEvaluation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/EvaluationRecordImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/SocialPerformanceEvaluation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/CockpitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/SalesMenOverviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/SceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/utils/DataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/utils/DatabaseConnectionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cockpit.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/form.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/baustelle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/salesMenOverview.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/hbrs/performancecockpit/controler/ManagePersonalImplRoundTripTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/FormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/entities/SalesMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/entities/SalesMan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/EvaluationRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/EvaluationRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hbrs/performancecockpit/form.fxml" beforeDir="false" />
-    </list>
+    <list default="true" id="304c0466-487b-4d30-a72c-83501ccbd974" name="Changes" comment="Adds ui for creating salesMen, mongoDB and tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,6 +114,14 @@
       <option name="presentableId" value="Default" />
       <updated>1697565076298</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adds ui for creating salesMen, mongoDB and tests">
+      <created>1698148229748</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698148229748</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,5 +134,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adds ui for creating salesMen, mongoDB and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds ui for creating salesMen, mongoDB and tests" />
   </component>
 </project>

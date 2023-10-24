@@ -30,7 +30,6 @@ public class FormController {
                 fistNameTextField.getText(),
                 lastNameTextField.getText(),
                 locationTextField.getText());
-        System.out.println("salesman: " + salesMan);
         try {
             new ManagePersonalImpl().createSalesMan(salesMan);
         } catch (DatabaseConnectionException e) {

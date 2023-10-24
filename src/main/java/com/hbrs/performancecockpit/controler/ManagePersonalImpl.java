@@ -190,13 +190,10 @@ public class ManagePersonalImpl implements ManagePersonal {
 
     @Override
     public void updateEvaluationRecord(EvaluationRecord record, int employeeNumber) throws DatabaseConnectionException {
-        System.out.println("fdgfg");
         try (MongoClient client = new MongoClient("localhost", 27017)) {
-            System.out.println("sadfdf");
             var db = client.getDatabase("mongoDB");
             var collection = db.getCollection("evaluationRecords");
 
-            System.out.println("ffff");
             Bson filter = and(
                     eq("employeeNumber", employeeNumber),
                     eq("year", record)
@@ -204,10 +201,8 @@ public class ManagePersonalImpl implements ManagePersonal {
 
             Document updatedDocument = record.toDocument();
 
-            System.out.println("ggg");
             UpdateResult result = collection.replaceOne(filter, updatedDocument);
 
-            System.out.println("hhhh");
             if (result.getModifiedCount() == 0) {
                 System.out.println("Nichts zum updaten da");
             }
