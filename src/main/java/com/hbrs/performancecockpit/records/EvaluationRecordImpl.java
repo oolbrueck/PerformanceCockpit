@@ -31,10 +31,12 @@ public class EvaluationRecordImpl implements EvaluationRecord {
         this.employeeNumber = employeeNumber;
     }
 
+    @Override
     public List<ClientEvaluation> getClientEvaluation() {
         return clientEvaluation;
     }
 
+    @Override
     public SocialPerformanceEvaluation getSocialPerformanceEvaluation() {
         return socialPerformanceEvaluation;
     }
@@ -44,40 +46,11 @@ public class EvaluationRecordImpl implements EvaluationRecord {
         return year;
     }
 
+    @Override
     public int getEmployeeNumber() {
         return employeeNumber;
     }
 
-    public Document toDocument() {
-        Document document = new Document();
-        document.append("year", year);
-        document.append("employeeNumber", employeeNumber);
-
-        List<Document> clientEvaluations = new ArrayList<>();
-        for (ClientEvaluation clientEvaluation : clientEvaluation) {
-            Document clientEvalDoc = new Document()
-                    .append("clientRating", clientEvaluation.getClientRating().toString())
-                    .append("clientCategory", clientEvaluation.getClientCategory().toString())
-                    .append("soldItems", clientEvaluation.getSoldItems());
-
-            clientEvaluations.add(clientEvalDoc);
-        }
-        document.append("clientEvaluation", clientEvaluations);
-
-        if (socialPerformanceEvaluation != null) {
-            Document socialEvalDoc = new Document()
-                    .append("leaderShipCompetence", socialPerformanceEvaluation.getLeaderShipCompetence().getValue())
-                    .append("opennessToEmployee", socialPerformanceEvaluation.getOpennessToEmployee().getValue())
-                    .append("socialBehaviourToEmployee", socialPerformanceEvaluation.getSocialBehaviourToEmployee().getValue())
-                    .append("attitudeTowardsClient", socialPerformanceEvaluation.getAttitudeTowardsClient().getValue())
-                    .append("communicationSkills", socialPerformanceEvaluation.getCommunicationSkills().getValue())
-                    .append("integrityToCompany", socialPerformanceEvaluation.getIntegrityToCompany().getValue());
-
-            document.append("socialPerformanceEvaluation", socialEvalDoc);
-        }
-
-        return document;
-    }
 
     @Override
     public String toString() {

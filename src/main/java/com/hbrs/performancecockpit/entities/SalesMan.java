@@ -6,7 +6,6 @@ package com.hbrs.performancecockpit.entities;
 
 import org.bson.Document;
 
-import java.time.LocalDate;
 
 public class SalesMan {
 

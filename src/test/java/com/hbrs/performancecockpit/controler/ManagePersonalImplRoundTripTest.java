@@ -48,13 +48,14 @@ class ManagePersonalImplRoundTripTest { //TODO eigenen container/DB für Tests!!
                                                                                                   SocialPerformanceEvaluation.NumberEnum.THREE);
         var evaluationRecord = new EvaluationRecordImpl(clientEvaluationList, socialPerformanceEvaluation, 2023, employeeNumber);
         var managePersonalController = new ManagePersonalImpl();
+        var manageEvaluationController = new ManageEvaluationImpl();
 
 
         //when
         managePersonalController.createSalesMan(salesMan);
-        managePersonalController.createEvaluationRecord(evaluationRecord, employeeNumber);
+        manageEvaluationController.createEvaluationRecord(evaluationRecord);
         var salesManFromDB = managePersonalController.readSalesMan(employeeNumber);
-        var evaluationRecordFromDB = managePersonalController.readEvaluationRecords(employeeNumber).get(0);
+        var evaluationRecordFromDB = manageEvaluationController.readEvaluationRecords(employeeNumber).get(0);
 
 
         //then
@@ -80,8 +81,9 @@ class ManagePersonalImplRoundTripTest { //TODO eigenen container/DB für Tests!!
                 SocialPerformanceEvaluation.NumberEnum.THREE);
         var evaluationRecord = new EvaluationRecordImpl(clientEvaluationList, socialPerformanceEvaluation, 2023, employeeNumber);
         var managePersonalController = new ManagePersonalImpl();
+        var manageEvaluationController = new ManageEvaluationImpl();
         managePersonalController.createSalesMan(salesMan);
-        managePersonalController.createEvaluationRecord(evaluationRecord, employeeNumber);
+        manageEvaluationController.createEvaluationRecord(evaluationRecord);
 
 
         //when
@@ -94,7 +96,7 @@ class ManagePersonalImplRoundTripTest { //TODO eigenen container/DB für Tests!!
                 SocialPerformanceEvaluation.NumberEnum.TWO,
                 SocialPerformanceEvaluation.NumberEnum.TWO);
         var evaluationRecordChanged = new EvaluationRecordImpl(clientEvaluationList, socialPerformanceEvaluationChanged, 2023, employeeNumber);
-        //managePersonalController.updateEvaluationRecord(evaluationRecordChanged, employeeNumber); //TODO fix Can't find a codec for class com.hbrs.performancecockpit.records.EvaluationRecordImpl
+        manageEvaluationController.updateEvaluationRecord(evaluationRecordChanged); //TODO fix Can't find a codec for class com.hbrs.performancecockpit.records.EvaluationRecordImpl
         var salesManFromDB = managePersonalController.readSalesMan(employeeNumber);
         //var evaluationRecordFromDB = managePersonalController.readEvaluationRecords(employeeNumber).get(0); //
 
@@ -122,8 +124,9 @@ class ManagePersonalImplRoundTripTest { //TODO eigenen container/DB für Tests!!
                 SocialPerformanceEvaluation.NumberEnum.THREE);
         var evaluationRecord = new EvaluationRecordImpl(clientEvaluationList, socialPerformanceEvaluation, 2023, employeeNumber);
         var managePersonalController = new ManagePersonalImpl();
+        var manageEvaluationController = new ManageEvaluationImpl();
         managePersonalController.createSalesMan(salesMan);
-        managePersonalController.createEvaluationRecord(evaluationRecord, employeeNumber);
+        manageEvaluationController.createEvaluationRecord(evaluationRecord);
 
 
         //when

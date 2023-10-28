@@ -4,13 +4,18 @@
 
 package com.hbrs.performancecockpit.records;
 
-import org.bson.Document;
+
+import java.util.List;
 
 public interface EvaluationRecord {
-
-    public Document toDocument();
 
     public String toString();
 
     public int getYear();
+
+    public int getEmployeeNumber();
+
+    public List<ClientEvaluation> getClientEvaluation();
+
+    public SocialPerformanceEvaluation getSocialPerformanceEvaluation();
 }
