@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="304c0466-487b-4d30-a72c-83501ccbd974" name="Changes" comment="refactors">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManageEvaluation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManageEvaluationImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/repositories/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/repositories/EvaluationRepositiory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/repositories/SalesManRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/utils/DocumentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/utils/Utils.java" afterDir="false" />
+    <list default="true" id="304c0466-487b-4d30-a72c-83501ccbd974" name="Changes" comment="refactors repository access">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonalImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonalImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/entities/SalesMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/entities/SalesMan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/EvaluationRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/EvaluationRecord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/EvaluationRecordImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/records/EvaluationRecordImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/repositories/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/repositories/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/repositories/EvaluationRepositiory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/repositories/EvaluationRepositiory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/repositories/SalesManRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/repositories/SalesManRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/FormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/utils/DocumentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/utils/DocumentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/hbrs/performancecockpit/controler/ManagePersonalImplRoundTripTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hbrs/performancecockpit/controler/ManagePersonalImplRoundTripTest.java" afterDir="false" />
     </list>
@@ -148,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698148387359</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactors repository access">
+      <created>1698504363855</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698504363855</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +168,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adds ui for creating salesMen, mongoDB and tests" />
     <MESSAGE value="refactors" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactors" />
+    <MESSAGE value="refactors repository access" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactors repository access" />
   </component>
 </project>

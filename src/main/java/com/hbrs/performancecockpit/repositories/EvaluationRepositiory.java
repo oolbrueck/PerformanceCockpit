@@ -21,7 +21,7 @@ import static com.mongodb.client.model.Filters.eq;
 public class EvaluationRepositiory extends BaseRepository<EvaluationRecord> {
 
     public EvaluationRepositiory() {
-        super("evaluationCollection");
+        super("evaluationCollection", EvaluationRecord.class);
     }
 
     public void createEvaluation(EvaluationRecord evaluation) {

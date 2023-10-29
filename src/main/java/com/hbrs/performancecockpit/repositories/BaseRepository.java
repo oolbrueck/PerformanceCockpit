@@ -6,6 +6,7 @@ package com.hbrs.performancecockpit.repositories;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JavaType;
 import com.hbrs.performancecockpit.entities.SalesMan;
 import com.hbrs.performancecockpit.utils.DocumentMapper;
 import com.hbrs.performancecockpit.utils.Utils;
@@ -28,13 +29,16 @@ public abstract class BaseRepository<T> {
     protected MongoDatabase database;
     protected MongoCollection<Document> collection;
 
-    public BaseRepository(String collection) {
+    protected Class clazz;
+
+    public BaseRepository(String collection, Class clazz) { //TODO DB connection auslagern (und closen)
         var dbPort = Utils.getDatabasePort();
         var dbHost = Utils.getDatabaseHost();
         var dbName = Utils.getDatabaseName();
         this.mongoClient = new MongoClient(dbHost, dbPort);;
         this.database = mongoClient.getDatabase(dbName);
         this.collection = database.getCollection(collection);
+        this.clazz = clazz;
     }
 
     protected void create(T objectToBeCrated) {
@@ -46,7 +50,8 @@ public abstract class BaseRepository<T> {
             MongoCursor<Document> cursor = this.collection.find(filter).iterator();
             if (cursor.hasNext()) {
                 Document document = cursor.next();
-                return new DocumentMapper<T>().fromDocument(document, new TypeReference<T>() {});
+                document.remove("_id");
+                return new DocumentMapper<T>().fromDocument(document, this.clazz);
             } else {
                 return null;
             }
@@ -67,7 +72,8 @@ public abstract class BaseRepository<T> {
         List<T> resultList = new ArrayList<>();
         FindIterable<Document> documents = collection.find();
         for (Document document : documents) {
-            resultList.add(new DocumentMapper<T>().fromDocument(document, new TypeReference<T>() {}));
+            document.remove("_id");
+            resultList.add(new DocumentMapper<T>().fromDocument(document, this.clazz));
         }
         return resultList;
     }
@@ -80,7 +86,8 @@ public abstract class BaseRepository<T> {
 
         while (cursor.hasNext()) {
             Document document = cursor.next();
-            T obj = new DocumentMapper<T>().fromDocument(document, new TypeReference<T>() {});
+            document.remove("_id");
+            T obj = new DocumentMapper<T>().fromDocument(document, this.clazz);
             objects.add(obj);
         }
         return objects;

@@ -30,12 +30,7 @@ public class FormController {
                 fistNameTextField.getText(),
                 lastNameTextField.getText(),
                 locationTextField.getText());
-        try {
-            new ManagePersonalImpl().createSalesMan(salesMan);
-        } catch (DatabaseConnectionException e) {
-            throw new RuntimeException(e);
-            //TODO Fehlerausgabe gegenüber User
-        }
+        new ManagePersonalImpl().createSalesMan(salesMan);
         (new SceneController()).switchToCockpit(event);
     }
 

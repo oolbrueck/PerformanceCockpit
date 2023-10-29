@@ -4,9 +4,9 @@
 
 package com.hbrs.performancecockpit.records;
 
-import org.bson.Document;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -19,7 +19,11 @@ public class EvaluationRecordImpl implements EvaluationRecord {
 
 
 
-    public EvaluationRecordImpl(List<ClientEvaluation> clientEvaluation, SocialPerformanceEvaluation socialPerformanceEvaluation, int year, int employeeNumber) {
+    @JsonCreator
+    public EvaluationRecordImpl(@JsonProperty("clientEvaluation") List<ClientEvaluation> clientEvaluation,
+                                @JsonProperty("socialPerformanceEvaluation") SocialPerformanceEvaluation socialPerformanceEvaluation,
+                                @JsonProperty("year") int year,
+                                @JsonProperty("employeeNumber") int employeeNumber) {
 
         if(clientEvaluation.isEmpty()) {
             throw new IllegalArgumentException("EvaluationRecord needs at least one client evaluation");

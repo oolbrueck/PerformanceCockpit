@@ -4,7 +4,10 @@
 
 package com.hbrs.performancecockpit.entities;
 
-import org.bson.Document;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import org.bson.types.ObjectId;
 
 
 public class SalesMan {
@@ -15,7 +18,11 @@ public class SalesMan {
 
     private final String location;
 
-    public SalesMan(int employeeNumber, String firstName, String lastName, String location) {
+    @JsonCreator
+    public SalesMan(@JsonProperty("employeeNumber") int employeeNumber,
+                    @JsonProperty("firstName") String firstName,
+                    @JsonProperty("lastName") String lastName,
+                    @JsonProperty("location") String location) {
         this.employeeNumber = employeeNumber;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -44,15 +51,6 @@ public class SalesMan {
                 ", lastName='" + lastName + '\'' +
                 ", location='" + location + '\'' +
                 '}';
-    }
-
-    public Document toDocument() {
-        var document = new Document();
-        document.append("firstName" , this.firstName );
-        document.append("lastName" , this.lastName );
-        document.append("employeeNumber" , this.employeeNumber);
-        document.append("location" , this.location);
-        return document;
     }
 
 }

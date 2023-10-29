@@ -12,7 +12,7 @@ public class SalesManRepository extends BaseRepository<SalesMan> {
 
 
     public SalesManRepository() {
-        super("salesManCollection");
+        super("salesManCollection", SalesMan.class);
     }
 
     public void createSalesMan(SalesMan salesMan) {

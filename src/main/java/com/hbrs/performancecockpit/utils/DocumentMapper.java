@@ -6,6 +6,7 @@ package com.hbrs.performancecockpit.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hbrs.performancecockpit.records.ClientEvaluation;
 import org.bson.Document;
@@ -27,11 +28,11 @@ public class DocumentMapper<T> {
         return Document.parse(json);
     }
 
-    public T fromDocument(Document document, TypeReference<T> typeReference) {
+    public T fromDocument(Document document, Class clazz) {
         String json = document.toJson();
         T obj = null;
         try {
-            obj = objectMapper.readValue(json, typeReference);
+            obj = objectMapper.readValue(json, objectMapper.getTypeFactory().constructType(clazz));
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }

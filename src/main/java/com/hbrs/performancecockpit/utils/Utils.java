@@ -25,6 +25,6 @@ public abstract class Utils {
     }
 
     public static String getDatabaseName() {
-        return "mongoDB";
+        return isRunningInTest() ? "mongoTestDB" : "mongoDB";
     }
 }
