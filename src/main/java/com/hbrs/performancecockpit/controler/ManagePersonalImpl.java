@@ -6,9 +6,12 @@ package com.hbrs.performancecockpit.controler;
 
 import com.hbrs.performancecockpit.entities.SalesMan;
 import com.hbrs.performancecockpit.repositories.SalesManRepository;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 
+@Service
 public class ManagePersonalImpl implements ManagePersonal {
 
     System.Logger log = System.getLogger(this.getClass().getName() + "Logger");
@@ -33,7 +36,8 @@ public class ManagePersonalImpl implements ManagePersonal {
         new SalesManRepository().deleteSalesMan(salesMan);
     }
 
-    public List<SalesMan> readAllSalesMen() {
+    @Override
+    public List<SalesMan> readAll() {
         return new SalesManRepository().readAll();
     }
 

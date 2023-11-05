@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.io.IOException;
 
@@ -18,7 +19,8 @@ public class App extends Application {
     }
     @Override
     public void init() {
-        SpringApplication.run(getClass()).getAutowireCapableBeanFactory().autowireBean(this);
+        SpringApplication.run(App.class);
+        //SpringApplication.run(getClass()).getAutowireCapableBeanFactory().autowireBean(this);
     }
     @Override
     public void start(Stage primaryStage) throws Exception {

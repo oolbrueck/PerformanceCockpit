@@ -3,12 +3,9 @@ package com.hbrs.performancecockpit.ui;
 
 import com.hbrs.performancecockpit.controler.ManagePersonalImpl;
 import com.hbrs.performancecockpit.entities.SalesMan;
-import com.hbrs.performancecockpit.utils.DatabaseConnectionException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-
-import java.io.IOException;
 
 import static java.lang.Integer.parseInt;
 

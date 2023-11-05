@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="304c0466-487b-4d30-a72c-83501ccbd974" name="Changes" comment="refactors README.md">
+    <list default="true" id="304c0466-487b-4d30-a72c-83501ccbd974" name="Changes" comment="integrates spring boot">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/rest/controller/SalesManRest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/SceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/SceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonalImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/controler/ManagePersonalImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hbrs/performancecockpit/ui/FormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hbrs/performancecockpit/controler/ManagePersonalImplRoundTripTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hbrs/performancecockpit/controler/ManagePersonalImplRoundTripTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +25,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,10 +56,9 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/oligo/IdeaProjects/PerformanceCockpit/src/main/resources/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/oligo/IdeaProjects/PerformanceCockpit/src/main/java/com/hbrs/performancecockpit&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
@@ -63,6 +66,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oligo\IdeaProjects\PerformanceCockpit\src\main\java\com\hbrs\performancecockpit" />
       <recent name="C:\Users\oligo\IdeaProjects\PerformanceCockpit\src\main\resources\images" />
       <recent name="C:\Users\oligo\IdeaProjects\PerformanceCockpit\src\main\resources\com\hbrs\performancecockpit" />
       <recent name="C:\Users\oligo\IdeaProjects\PerformanceCockpit\src\main\java\com\hbrs\performancecockpit\controler" />
@@ -72,6 +76,10 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.hbrs.performancecockpit" />
+      <recent name="com.hbrs.performancecockpit.controler" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.hbrs.performancecockpit.controler" />
@@ -83,7 +91,7 @@
       <module name="PerformanceCockpit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hbrs.performancecockpit.*" />
+          <option name="PATTERN" value="com.hbrs.performancecockpit.controler.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698504363855</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="integrates spring boot">
+      <created>1698867889300</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698867889300</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +217,7 @@
     <MESSAGE value="Adds ui for creating salesMen, mongoDB and tests" />
     <MESSAGE value="refactors" />
     <MESSAGE value="refactors repository access" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactors repository access" />
+    <MESSAGE value="integrates spring boot" />
+    <option name="LAST_COMMIT_MESSAGE" value="integrates spring boot" />
   </component>
 </project>

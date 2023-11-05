@@ -4,7 +4,6 @@ import com.hbrs.performancecockpit.entities.SalesMan;
 import com.hbrs.performancecockpit.records.ClientEvaluation;
 import com.hbrs.performancecockpit.records.EvaluationRecordImpl;
 import com.hbrs.performancecockpit.records.SocialPerformanceEvaluation;
-import com.hbrs.performancecockpit.utils.DatabaseConnectionException;
 import com.hbrs.performancecockpit.utils.Utils;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
